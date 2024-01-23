@@ -10,7 +10,19 @@ CREATE TABLE products (
   price NUMERIC(10, 2)
 );
 
+CREATE TABLE club (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  AC Milan INTEGER 
+  
+);
 
+CREATE TABLE merk (
+  id INTEGER PRIMARY KEY AUTOINCREMENT
+);
+
+CREATE TABLE club (
+  id INTEGER PRIMARY KEY AUTOINCREMENT
+);
 --
 -- populate with data
 --
