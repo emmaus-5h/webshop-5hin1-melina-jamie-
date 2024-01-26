@@ -8,20 +8,31 @@ CREATE TABLE products (
   name VARCHAR(255),
   description TEXT,
   price NUMERIC(10, 2)
+  club_id INTEGER,
+  merk_id INTEGER, 
+  maat_id INTEGER,
+  kleur_id INTEGER
 );
 
 CREATE TABLE club (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  AC Milan INTEGER 
-  
+  club_name VARCHAR (230) 
 );
 
 CREATE TABLE merk (
-  id INTEGER PRIMARY KEY AUTOINCREMENT
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  merk_name VARCHAR (220)
 );
 
-CREATE TABLE club (
-  id INTEGER PRIMARY KEY AUTOINCREMENT
+CREATE TABLE maat (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  maat_name VARCHAR (210)
+  );
+CREATE TABLE kleur(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  kleur_name VARCHAR (200)
+);
+ 
 );
 --
 -- populate with data
