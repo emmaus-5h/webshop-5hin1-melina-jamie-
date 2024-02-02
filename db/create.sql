@@ -33,7 +33,12 @@ CREATE TABLE kleur (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   kleur_name VARCHAR (200)
   );
- 
+
+CREATE TABLE competities 
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  competitie_name VARCHAR (200)
+  );
+
 );
 --
 -- populate with data
@@ -64,3 +69,33 @@ insert into club (club_name) values ('AS Roma');
 insert into club (club_name) values ('Aston Villa');
 insert into club (club_name) values ('Chelsea');
 insert into club (club_name) values ('FC Bayern München');
+
+insert into merk (merk_name) values ('Adidas'); 
+insert into merk (merk_name) values ('Nike');
+insert into merk (merk_name) values ('Puma');
+insert into merk (merk_name) values ('Umbro');
+insert into merk (merk_name) values ('Reebok');
+insert into merk (merk_name) values ('Kappa');
+
+insert into maat (maat_name) values ('XS');
+insert into maat (maat_name) values ('S');
+insert into maat (maat_name) values ('M');
+insert into maat (maat_name) values ('L');
+insert into maat (maat_name) values ('XL');
+
+insert into kleur (kleur_name) values ('Zwart');
+insert into kleur (kleur_name) values ('Wit');
+insert into kleur (kleur_name) values ('Rood');
+insert into kleur (kleur_name) values ('Oranje');
+insert into kleur (kleur_name) values ('Geel');
+insert into kleur (kleur_name) values ('Groen');
+insert into kleur (kleur_name) values ('Blauw');
+insert into kleur (kleur_name) values ('Donkerblauw');
+insert into kleur (kleur_name) values ('Paars');
+
+insert into competities (competitie_name) values ('Eredivisie');
+insert into competities (competitie_name) values ('Premier league');
+insert into competities (competitie_name) values ('La liga');
+insert into competities (competitie_name) values ('Serie A');
+insert into competities (competitie_name) values ('Bundesliga');
+insert into competities (competitie_name) values ('Ligue 1');
