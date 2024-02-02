@@ -7,7 +7,7 @@ CREATE TABLE products (
   code VARCHAR(15),
   name VARCHAR(255),
   description TEXT,
-  price NUMERIC(10, 2)
+  price NUMERIC(10, 2),
   club_id INTEGER,
   merk_id INTEGER, 
   maat_id INTEGER,
@@ -17,21 +17,22 @@ CREATE TABLE products (
 CREATE TABLE club (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   club_name VARCHAR (230) 
-);
+  );
 
 CREATE TABLE merk (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   merk_name VARCHAR (220)
-);
+  );
 
 CREATE TABLE maat (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   maat_name VARCHAR (210)
   );
-CREATE TABLE kleur(
+
+CREATE TABLE kleur (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   kleur_name VARCHAR (200)
-);
+  );
  
 );
 --
@@ -50,3 +51,16 @@ insert into products (name, description, code, price) values ('Aquí llega Conde
 insert into products (name, description, code, price) values ('Kiss for Corliss, A (Almost a Bride)', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '686928463-6', 14);
 insert into products (name, description, code, price) values ('Velvet Goldmine', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 14);
 
+insert into club (club_name) values ('AC Milan');
+insert into club (club_name) values ('Borussia Dortmund');
+insert into club (club_name) values ('FC Barcelona');
+insert into club (club_name) values ('Atletico Madri');
+insert into club (club_name) values ('Arsenal');
+insert into club (club_name) values ('Juventus');
+insert into club (club_name) values ('Fiorentina');
+insert into club (club_name) values ('AFC Ajax');
+insert into club (club_name) values ('Manchester United');
+insert into club (club_name) values ('AS Roma');
+insert into club (club_name) values ('Aston Villa');
+insert into club (club_name) values ('Chelsea');
+insert into club (club_name) values ('FC Bayern München');
