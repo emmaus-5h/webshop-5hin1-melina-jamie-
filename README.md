@@ -206,3 +206,24 @@ for help almost 24x7 with many questions and problems and providing basic shop c
 99, 112, 116
 172, 191, 164
 130, 163, 161
+
+
+
+stap 3 & 4 API & WEB
+aanpassen api 
+video 5 informatica.emmauscollege  
+
+mapje api (mapje index)
+regel: app.get('/api/products', getProducts)
+api/products geeft aan waar de webpagina de vragen aan de api vraagt
+getProducts geeft de code die de vraag beantwoordt. 
+In getproducts staat de sql query voor de database 
+const sqlOpdracht = db.prepare('SELECT products.id AS id, products.name AS name, products.description AS description, products.code AS code, products.price AS price FROM products ORDER BY products.name ASC') 
+pas de query aan zodat er extra velden uit de database worden opgevraagd, gebruik altijd AS, bij 1:n moet je JOIN gebruiken,  
+
+aanpassen web 
+video 6 
+mapje web/ index.html 
+onder de regel  <!-- template for product info--> staat het template voor een product het template wordt voor elke product gekopieerd 
+als je iets toegvoegd hebt aan het template, dan moet je de waarden er in laten zetten 
+na het erin zetten moet het ook toegevoegd worden aan de api 
