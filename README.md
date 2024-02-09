@@ -225,5 +225,5 @@ aanpassen web
 video 6 
 mapje web/ index.html 
 onder de regel  <!-- template for product info--> staat het template voor een product het template wordt voor elke product gekopieerd 
-als je iets toegvoegd hebt aan het template, dan moet je de waarden er in laten zetten 
+als je iets toegevoegd hebt aan het template, dan moet je de waarden er in laten zetten 
 na het erin zetten moet het ook toegevoegd worden aan de api 
