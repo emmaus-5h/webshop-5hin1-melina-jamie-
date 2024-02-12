@@ -35,12 +35,11 @@ CREATE TABLE kleur (
   kleur_name VARCHAR (200)
   );
 
-CREATE TABLE competities 
+CREATE TABLE competities (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   competitie_name VARCHAR (200)
   );
 
-);
 --
 -- populate with data
 --
@@ -52,15 +51,15 @@ CREATE TABLE competities
 
 insert into products (name, description, code, price, club_id, merk_id, maat_id, kleur_id, competitie_id) values ('AC Milan 1997/98','Gedragen door de sterspeler ', '1029874', 139.95,'AC Milan', 'Puma', 'XS', 'Rood', 'Serie A');
 insert into products (name, description, code, price, club_id, merk_id, maat_id, kleur_id, competitie_id) values ('Borussia Dortmund', 'Nulla ut erat id mauris vulputate elementum. Nullam varius.', '1029980', 115.00, 'Borussia Dortmund', 'Puma', 'S', 'Zwart', 'Bundesliga');
-insert into products (name, description, code, price, club_id, merk_id, maat_id, kleur_id, competitie,id) values ('Fc Barcelona', 'Pellentesque at nulla. Suspendisse potenti.', '1029760', 135.00, 'FC Barcelona', 'Adidas', 'M', 'Zwart', 'La Liga');
+insert into products (name, description, code, price, club_id, merk_id, maat_id, kleur_id, competitie_id) values ('Fc Barcelona', 'Pellentesque at nulla. Suspendisse potenti.', '1029760', 135.00, 'FC Barcelona', 'Adidas', 'M', 'Zwart', 'La Liga');
 insert into products (name, description, code, price, club_id, merk_id, maat_id, kleur_id, competitie_id) values ('Atletico Madrid', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa.', '1029654', 134.99, 'Atletico Madrid', 'Puma', 'M', 'Blauw', 'La Liga');
 insert into products (name, description, code, price, club_id, merk_id, maat_id, kleur_id, competitie_id) values ('Arsenal', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '1029433', 169.99, 'Arsenal', 'Puma', 'S', 'Blauw', 'Premier League');
-insert into products (name, description, code, price, club_id, merk_id, maat_id, kleur_id, competitie_id) values ('Juventus', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '1029258', 139.99, 'Juventus', 'Adidas', 'S', 'Zwart', 'Wit', 'Serie A');
+insert into products (name, description, code, price, club_id, merk_id, maat_id, kleur_id, competitie_id) values ('Juventus', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '1029258', 139.99, 'Juventus', 'Adidas', 'S', 'Wit', 'Serie A');
 insert into products (name, description, code, price, club_id, merk_id, maat_id, kleur_id, competitie_id) values ('Fiorentina', 'Nulla ut', '1029132', 159.99, 'Fiorentina', 'Puma', 'S', 'Rood', 'Serie A');
 insert into products (name, description, code, price, club_id, merk_id, maat_id, kleur_id, competitie_id) values ('AFC Ajax', 'gedragen door', '1029075', 119.99, 'AFC Ajax', 'Puma', 'S', 'Rood', 'Eredivisie');
-insert into products (name, description, code, price, club_id, merk_id, maat_id, kleur_id, competitie_id) values ('Manchester United', 'Gedragen door speler', '1028760', 124,99, 'Manchester United', 'Puma', 'S', 'Rood', 'Premier League');
-insert into products (name, description, code, price, club_id, merk_id, maat_id, kleur_id, competitie_id) values ('AS Roma', 'Gedragen door speler', '1028640', 135.99, 'AS Roma', 'Puma', 'S', 'Serie A');
-insert into products (name, description, code, price, club_id, merk_id, maat_id, kleur_id, competitie_id) values ('Aston Villa', 'GEdragen door speler', '1028560', 142.99, 'Aston Villa', 'Puma', 'S', 'Rood', 'Premier League'):
+insert into products (name, description, code, price, club_id, merk_id, maat_id, kleur_id, competitie_id) values ('Manchester United', 'Gedragen door speler', '1028760', 124.99, 'Manchester United', 'Puma', 'S', 'Rood', 'Premier League');
+insert into products (name, description, code, price, club_id, merk_id, maat_id, kleur_id, competitie_id) values ('AS Roma', 'Gedragen door speler', '1028640', 135.99, 'AS Roma', 'Puma', 'S', 'rood', 'Serie A');
+insert into products (name, description, code, price, club_id, merk_id, maat_id, kleur_id, competitie_id) values ('Aston Villa', 'GEdragen door speler','1028560', 142.99, 'Aston Villa', 'Puma', 'S', 'Rood', 'Premier League');
 insert into products (name, description, code, price, club_id, merk_id, maat_id, kleur_id, competitie_id) values ('Chelsea', 'Gedragen door speler', '1028345', 114.99, 'Chelsea', 'Puma', 'S', 'Rood', 'Premier League');
 insert into products (name, description, code, price, club_id, merk_id, maat_id, kleur_id, competitie_id) values ('FC Bayern München', 'Gedragen door speler', '1028206', 139.99, 'FC Bayern  München', 'Puma', 'S', 'Rood', 'Bundesliga'); 
 
