@@ -35,6 +35,12 @@ CREATE TABLE kleur (
   kleur_name VARCHAR (200)
   );
 
+CREATE TABLE product_kleur (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  product_id INTEGER,
+  kleur_id INTEGER
+);
+
 CREATE TABLE competities (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   competitie_name VARCHAR (200)
@@ -99,6 +105,8 @@ insert into kleur (kleur_name) values ('Groen');
 insert into kleur (kleur_name) values ('Blauw');
 insert into kleur (kleur_name) values ('Donkerblauw');
 insert into kleur (kleur_name) values ('Paars');
+
+insert into product_kleur (product_id, kleur_id) values (1, 2);
 
 insert into competities (competitie_name) values ('Eredivisie');
 insert into competities (competitie_name) values ('Premier league');
