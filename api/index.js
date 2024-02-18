@@ -64,14 +64,42 @@ function getCategories(request, response) {
   console.log('API verstuurt /api/categories/')
 }
 
+
 function getProducts(request, response) {
-  console.log('API ontvangt /api/products/', request.query)
-  let data = []
-  const sqlOpdracht = db.prepare('SELECT products.id AS id, products.name AS name, products.description AS description, products.code AS code, products.price AS price FROM products ORDER BY products.name ASC')
-  data = sqlOpdracht.all()
-  // console.log(JSON.stringify(data, null, 2))
-  response.status(200).send(data)
-  console.log('API verstuurt /api/products/')
+  console.log('API ontvangt /api/products/', request.query);
+  const sql = `
+    SELECT 
+      products.id AS id, 
+      products.name AS name, 
+      products.description AS description, 
+      products.code AS code, 
+      products.price AS price, 
+      club.club_name AS club,
+      merk.merk_name AS merk,
+      maat.maat_name AS maat,
+      competities.competitie_name AS competitie
+    FROM 
+      products
+    LEFT JOIN 
+      club ON products.club_id = club.id
+    LEFT JOIN 
+      merk ON products.merk_id = merk.id
+    LEFT JOIN 
+      maat ON products.maat_id = maat.id
+    LEFT JOIN 
+      competities ON products.competitie_id = competities.id
+    ORDER BY 
+      products.name ASC
+  `;
+
+  db.all(sql, (err, data) => {
+    if (err) {
+      console.error('Error retrieving products:', err.message);
+      return response.status(500).send('Internal server error');
+    }
+    console.log('API verstuurt /api/products/');
+    response.status(200).json(data);
+  });
 }
 
 function getProductById(request, response) {
